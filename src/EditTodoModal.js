@@ -15,7 +15,7 @@ function EditTodoModal(props) {
     const toggle = () => setModal(!modal)
 
     return (
-        <div>
+        <>
             <button>Edit</button>
             <Modal>
                 <ModalHeader>
@@ -38,7 +38,7 @@ function EditTodoModal(props) {
                     <button onClick={toggle}>Cancel</button>
                 </ModalFooter>
             </Modal>
-        </div>
+        </>
     )
 }
 

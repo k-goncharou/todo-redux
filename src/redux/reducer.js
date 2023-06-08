@@ -22,7 +22,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case "createTask":
-            return state;
+            return {...state, todoList: [...state.todoList, action.payload]};
 
         case "updateTask":
             const updateTodo =
